@@ -1,11 +1,13 @@
 .header {
-// background-image: url("https://res.cloudinary.com/dciypbwrh/image/upload/v1575287831/tiles_zkccjy.webp");
-background-color: green;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(41, 39, 39, 0.89)), color-stop(100%,rgba(68, 62, 62, 0.445))), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Fko7twHhomhk8E%2Fgiphy.gif&f=1&nofb=1");
+background-color: white;
 background-size: cover;
 height: 100vh;
 padding-top: 12vh;
 display: flex;
-align-items: center;
+padding: 20vh;
 flex-direction: column;
 justify-content: center;
+color: white;
 }
+

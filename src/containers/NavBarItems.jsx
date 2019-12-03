@@ -33,7 +33,7 @@ class NavbarItems extends Component {
                         key={menuItem}
                     >
                         <AnchorLink
-                            offset={() => 50}
+                            offset={() => 1}
                             href={`#${menuItem}`}
                         >
                             {menuItem}
