@@ -1,5 +1,5 @@
 .navbar{ 
-    position: fixed;
+    position: absolute;
     width: 100%;
     // overflow: hidden;
     // top: 0;
@@ -9,7 +9,7 @@
     // z-index: 1000;
     background-color: transparent;
     // align-content: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     &-logo{
         height: 115px;
         color: white;
@@ -34,18 +34,20 @@
     padding: 0px 2rem;
     text-decoration: none;
     font-size: 23px;
-        a{
-            text-decoration: none;
+    transition: all 0.5s;
+    a{
+        text-decoration: none;
             color: inherit;
         }
-    &:hover {
-        // border-bottom: 2px solid #c4096e;
-        text-decoration: none;
-        color: #2d8080;
-
-    }
-    &-active{
-        color: #2d8080;
+        &:hover {
+            // border-bottom: 2px solid #c4096e;
+            text-decoration: none;
+            color: #2d8080;
+            transition: all 0.5s;
+            
+        }
+        &-active{
+        color: #ffffff;
         text-align: center;
         padding: 0px 2rem;
         text-decoration: none;

@@ -1,4 +1,6 @@
 .about {
+  padding-left: 20px;
+  padding-right: 20px;
   // background-image: url("https://res.cloudinary.com/dciypbwrh/image/upload/v1575287831/tiles_zkccjy.webp");
   background-color: #1a1a1a;
   background-size: cover;
@@ -38,5 +40,28 @@
         width: 15vw;
       }
     }
+  }
+}
+
+.goHomeLogo{
+  height: 6rem;
+    width: 6rem;
+    position: fixed;
+    background-color: #1a1a1aad;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px -2px 24px 0px, rgba(0, 0, 0, 0.12) 0px 2px 24px 0px;
+    top: 80%;
+    left: 92%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 100%;
+  &-image{
+      height: 100%;
+      padding-top: 11px;
   }
 }

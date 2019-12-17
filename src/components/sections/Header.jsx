@@ -10,8 +10,6 @@ const Header = () => {
       >
         {props => (
           <div style={props}>
-            <h1>Isabella Fry is the name</h1>
-            <h1>coding is the game</h1>
           </div>
         )}
       </Spring>

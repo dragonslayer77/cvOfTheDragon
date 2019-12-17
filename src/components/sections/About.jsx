@@ -1,30 +1,42 @@
 import React from "react";
 import AboutPictureCard from "../molecules/AboutPictureCard";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const About = () => {
   return (
     <div id="About" className="about">
-      <h1>'Bout me</h1>
+      <AnchorLink className="goHomeLogo" offset={() => 1} href={"#Home"}>
+        <img
+          className="navbar-logo-image"
+          src="https://res.cloudinary.com/dciypbwrh/image/upload/v1575370222/JwhhSAne0t_htnepc.svg"
+          alt="dragonLogo"
+        />
+      </AnchorLink>
+      <h1>Who is dragonslayer77?</h1>
       <div className="about-sections">
         <div className="about-sections-box">
           <h3>Personal</h3>
           <p>
-            Officiis et ab ea illum molestiae enim laborum odio. Ratione
-            corporis libero distinctio incidunt. Ipsa sit est quo esse.
+            I am a 21 year old Web Developer. I love to cook, im trying to learn
+            how to surf and I practice krav maga. I studied Organic Agriculture
+            in university, basically so i could pet the farm animals.
           </p>
         </div>
         <div className="about-sections-box">
           <h3>Code</h3>
           <p>
-            Officiis et ab ea illum molestiae enim laborum odio. Ratione
-            corporis libero distinctio incidunt. Ipsa sit est quo esse.
+            I started coding in early 2019 at Wild Code School, since then I’ve
+            worked on various projects including blogs, games and simple landing
+            pages. My focus at the moment is Javascript, mainly React, but I’m
+            always learning new things.
           </p>
         </div>
         <div className="about-sections-box">
           <h3>Goals</h3>
           <p>
-            Officiis et ab ea illum molestiae enim laborum odio. Ratione
-            corporis libero distinctio incidunt. Ipsa sit est quo esse.
+            At the moment my main goals are to create simple, readable and
+            effective code that yields an aesthetically pleasant product. As
+            well to further explore the backend world, primarily using Node.js.
           </p>
         </div>
       </div>

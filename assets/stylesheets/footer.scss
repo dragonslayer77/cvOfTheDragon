@@ -1,6 +1,6 @@
 .footer {
   // background-image: url("https://res.cloudinary.com/dciypbwrh/image/upload/v1575287831/tiles_zkccjy.webp");
-  background-color: white;
+  background-color: #f0f0f0;
   background-size: cover;
   height: 50vh;
   padding-top: 12vh;
@@ -8,4 +8,53 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  span{
+    color: #2d8080;
+  }
+  &-items{
+    padding-top: 15px;
+    display: flex;
+    list-style: none; 
+  }
+  &-item{
+    color: #2d8080;
+    text-align: center;
+    padding: 0px 1rem;
+    text-decoration: none;
+    font-size: 23px;
+    transition: all 0.5s;
+    a{
+        // text-decoration: none;
+            color: inherit;
+        }
+        &:hover {
+            // border-bottom: 2px solid #c4096e;
+            text-decoration: none;
+            color: #2d8080;
+            transition: all 0.5s;
+            
+        }
+  }
+  &-media{
+    padding-top: 20px;
+  }
+  &-social{
+    color: #2d8080;
+    text-align: center;
+    padding: 0px 2rem;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.5s;
+    a{
+        // text-decoration: none;
+            color: inherit;
+        }
+        &:hover {
+            // border-bottom: 2px solid #c4096e;
+            text-decoration: none;
+            color: #353434;
+            transition: all 0.5s;
+            
+        }
+  }
 }

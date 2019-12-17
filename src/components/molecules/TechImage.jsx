@@ -4,7 +4,7 @@ const TechImage = (props) => {
     return(
         <div className="techImage">
             <img src={props.imgUrl} alt={props.name}/>
-            <div>{props.name}</div>
+            <p>{props.name}</p>
         </div>
     );
 }

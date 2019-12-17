@@ -1,6 +1,5 @@
 body {
-  font-family: Helvetica;
-}
+  font-family: 'Quicksand', sans-serif;}
 
 .spa-theme{
   width: 100%;
@@ -10,12 +9,14 @@ body {
   // height: 100vh;
   display: flex;
   align-items: center;
+
 }
 
 @import './navbar.scss';
 @import './header.scss';
 @import './about.scss';
 @import './techImage.scss';
-@import './tech.scss';
+@import './development.scss';
 @import './contact.scss';
 @import './footer.scss';
+@import './button.scss';

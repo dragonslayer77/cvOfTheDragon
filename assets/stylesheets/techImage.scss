@@ -1,7 +1,10 @@
-.techImage{
-    width: 100px;
-    height: 100px;
-    img{
-        width: 100%;
-    }
+.techImage {
+  margin: 2rem;
+  align-items: center;
+  display: flex; 
+  flex-direction: column;
+    img {
+    height: 6rem;
+    margin-bottom: 2rem;
+  }
 }

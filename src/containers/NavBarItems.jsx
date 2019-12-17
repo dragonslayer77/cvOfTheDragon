@@ -3,9 +3,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
 const menuItems = [
-    'Home',
     'About',
-    'Tech',
+    'Development',
     'Contact'
 ];
 
@@ -13,7 +12,7 @@ class NavbarItems extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isActive: 'Home'
+            isActive: ''
         };
     }
 

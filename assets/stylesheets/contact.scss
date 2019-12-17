@@ -1,4 +1,6 @@
 .contact {
+  padding-left: 20px;
+  padding-right: 20px;
   // background-image: url("https://res.cloudinary.com/dciypbwrh/image/upload/v1575287831/tiles_zkccjy.webp");
   background-color: #353434;
   color: white;
@@ -9,4 +11,57 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  &-section {
+    display: flex;
+  }
+  &-card {
+    width: 20rem;
+    margin-top: 10vh;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    // text-align: center;
+    padding-left: 20px;
+    flex-direction: column;
+  }
+  &-form {
+    width: 25rem;
+    margin-top: 10vh;
+    // border: 1px solid grey;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    input,
+    textarea {
+      background-color: #353434;
+      color: white;
+      border-bottom: 1px solid white;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      width: 100%;
+    }
+    &-icon{
+      border-bottom: 1px solid white;
+      padding-right: 5px;
+    }
+    &-email,
+    &-name,
+    &-message {
+      width: 100%;
+      color: white;
+      display: flex;
+      align-content: center;
+      padding-bottom: 5vh;
+      &-icon {
+        // position: absolute;
+        top: 2.4rem;
+        left: 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
 }

@@ -35,33 +35,26 @@ class Navbar extends Component {
     const { isOpen } = this.state;
     return (
       <div className="navbar">
-        <AnchorLink
-          className="navbar-logo"
-          offset={() => 1}
-          href={'#Home'}
-        >
+        <AnchorLink className="navbar-logo" offset={() => 1} href={"#Home"}>
           <img
             className="navbar-logo-image"
             src="https://res.cloudinary.com/dciypbwrh/image/upload/v1575370222/JwhhSAne0t_htnepc.svg"
             alt="dragonLogo"
           />
         </AnchorLink>
-        {/* { screen === "laptop"
-                    ? (
-                        <NavbarItems />
-                    )
-                    : (
-                        <div
-                            className="burger-menu"
-                            role="presentation"
-                            onClick={this.markAsOpen}
-                        >
-                            {!isOpen ? this.handleBurgerImage() : null}
-                            
-                            {isOpen ? this.handleBurgerMenu() : null}
-                        </div>
-                    ) } */}
-        <NavbarItems />
+        {screen === "laptop" ? (
+          <NavbarItems />
+        ) : (
+          <div
+            className="burger-menu"
+            role="presentation"
+            onClick={this.markAsOpen}
+          >
+            {!isOpen ? this.handleBurgerImage() : null}
+
+            {isOpen ? this.handleBurgerMenu() : null}
+          </div>
+        )}
       </div>
     );
   }
