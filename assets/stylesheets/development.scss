@@ -14,18 +14,27 @@
     padding-top: 15vh;
     padding-bottom: 15vh;
   }
+  &-mobileSkills{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-rows: 15rem;
+    gap: 1rem;
+    place-items: center;
+  }
   h2 {
     display: flex;
     justify-content: center;
   }
   .slick-prev {
     left: -10px;
+    z-index: 1;
   }
   .slick-prev:before {
     font-size: 30px;
   }
   .slick-next {
     right: -10px;
+    z-index: 1;
   }
   .slick-next:before {
     font-size: 30px;
@@ -38,7 +47,7 @@
 }
 
 .project {
-  padding-top: 15vh;
+  padding-top: 6vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   grid-template-rows: 25rem;
@@ -80,5 +89,32 @@
   }
   &-card:hover img {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: 885px){
+  .project {
+    &-card img {
+      width: none;
+    }
+    &-card{
+      width: 23rem;
+      &-hover{
+        width: 23rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 415px){
+  .project{
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    place-items: unset;
+    &-card{
+      width: 21rem;
+      &-hover{
+        width: 21rem;
+      }
+    }
   }
 }

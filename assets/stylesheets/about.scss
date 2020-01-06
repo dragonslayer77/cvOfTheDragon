@@ -6,7 +6,7 @@
   background-size: cover;
   color: white;
 //   height: 105vh;
-  padding-top: 16vh;
+  padding-top: 10vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    padding-top: 2vh;
+    // padding-top: 2vh;
     &-box {
       h3 {
         color: #2d8080;
@@ -43,25 +43,49 @@
   }
 }
 
-.goHomeLogo{
-  height: 6rem;
-    width: 6rem;
-    position: fixed;
-    background-color: #1a1a1aad;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px -2px 24px 0px, rgba(0, 0, 0, 0.12) 0px 2px 24px 0px;
-    top: 80%;
-    left: 92%;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
+// .goHomeLogo{
+//   height: 6rem;
+//     width: 6rem;
+//     position: fixed;
+//     background-color: #1a1a1aad;
+//     box-shadow: rgba(0, 0, 0, 0.24) 0px -2px 24px 0px, rgba(0, 0, 0, 0.12) 0px 2px 24px 0px;
+//     top: 80%;
+//     left: 92%;
+//     display: flex;
+//     -webkit-box-pack: center;
+//     justify-content: center;
+//     -webkit-box-align: center;
+//     align-items: center;
+//     color: white;
+//     font-size: 2.5rem;
+//     cursor: pointer;
+//     border-radius: 100%;
+//   &-image{
+//       height: 100%;
+//       padding-top: 11px;
+//   }
+// }
+
+
+@media (max-width: 885px){
+  h1{
+    text-align: center;
+  }
+  .about-sections{
+    flex-direction: column;
     align-items: center;
-    color: white;
-    font-size: 2.5rem;
-    cursor: pointer;
-    border-radius: 100%;
-  &-image{
-      height: 100%;
-      padding-top: 11px;
+    &-box{
+      width: 75%;
+      // font-size: 1.2rem;
+    }
+  }
+  .about-image-card img {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 445px){
+  .about-image-card img {
+    width: 30vw;
   }
 }

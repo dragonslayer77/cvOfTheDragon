@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      screen: "laptop"
+      screen: ""
     };
   }
 
@@ -32,7 +32,7 @@ class App extends Component {
         <NavBar screen={this.state.screen} />
         <Header />
         <About />
-        <Development />
+        <Development screen={this.state.screen} />
         <Contact />
         <Footer />
       </div>

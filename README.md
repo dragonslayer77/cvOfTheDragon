@@ -16,6 +16,8 @@ For react router to work on `gh-pages` your `env` files should look like this:
 HOME_URL="https://myusername.github.io/my-cool-repo/"
 ROUTER_BASE_URL="/my-cool-repo"
 ```
+rm -rf node_modules/gh-pages/.cache 
+IF YOU CANT CREATE THE BRANCH GH-PAGES
 
 ## Hide your keys
 

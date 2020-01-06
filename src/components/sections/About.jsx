@@ -5,13 +5,13 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 const About = () => {
   return (
     <div id="About" className="about">
-      <AnchorLink className="goHomeLogo" offset={() => 1} href={"#Home"}>
+      {/* <AnchorLink className="goHomeLogo" offset={() => 1} href={"#Home"}>
         <img
           className="navbar-logo-image"
           src="https://res.cloudinary.com/dciypbwrh/image/upload/v1575370222/JwhhSAne0t_htnepc.svg"
           alt="dragonLogo"
         />
-      </AnchorLink>
+      </AnchorLink> */}
       <h1>Who is dragonslayer77?</h1>
       <div className="about-sections">
         <div className="about-sections-box">

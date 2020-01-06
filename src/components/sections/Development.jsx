@@ -10,6 +10,13 @@ const settings = {
   slidesToShow: 5,
   slidesToScroll: 4
 };
+const settingsMobile = {
+  dots: false,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 2
+};
 
 const technologies = [
   {
@@ -85,14 +92,38 @@ const technologies = [
     id: 12
   },
   {
-    name: "Yarn",
+    name: "Scrum",
     url:
-      "https://res.cloudinary.com/dciypbwrh/image/upload/v1575390126/1488416188-yarn-logo_hdmxxr.png",
+      "https://res.cloudinary.com/dciypbwrh/image/upload/v1578302563/scrum-a5c44d8364_ur1hei.png",
     id: 13
   }
 ];
 
-const Development = () => {
+const Development = props => {
+  let skills = (
+    <Slider {...settings}>
+      {technologies.map(technology => (
+        <TechImage
+          name={technology.name}
+          imgUrl={technology.url}
+          key={technology.id}
+        />
+      ))}
+    </Slider>
+  );
+  if (props.screen == "mobile") {
+    skills = (
+      <div className="development-mobileSkills">
+        {technologies.map(technology => (
+          <TechImage
+            name={technology.name}
+            imgUrl={technology.url}
+            key={technology.id}
+          />
+        ))}
+      </div>
+    );
+  }
   return (
     <div id="Development" className="development">
       <div className="development-portfolio">
@@ -101,15 +132,7 @@ const Development = () => {
       </div>
       <div className="development-skills">
         <h2>Skills</h2>
-        <Slider {...settings}>
-          {technologies.map(technology => (
-            <TechImage
-              name={technology.name}
-              imgUrl={technology.url}
-              key={technology.id}
-            />
-          ))}
-        </Slider>
+        {skills}
       </div>
     </div>
   );
