@@ -2,7 +2,7 @@
   padding-left: 20px;
   padding-right: 20px;
   // background-image: url("https://res.cloudinary.com/dciypbwrh/image/upload/v1575287831/tiles_zkccjy.webp");
-  background-color: #f0f0f0;
+  background-color: #c5c3c3;
   background-size: cover;
   // height: 93vh;
   padding-top: 15vh;
@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     grid-template-rows: 15rem;
-    gap: 1rem;
+    // gap: 1rem;
     place-items: center;
   }
   h2 {
@@ -108,7 +108,7 @@
 
 @media (max-width: 415px){
   .project{
-    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
     place-items: unset;
     &-card{
       width: 21rem;

@@ -6,16 +6,16 @@
   background-size: cover;
   color: white;
 //   height: 105vh;
-  padding-top: 10vh;
+  padding-top: 14vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   // justify-content: center;
   &-sections {
     display: flex;
+    // padding-top: 2vh;
     justify-content: space-evenly;
     width: 100%;
-    // padding-top: 2vh;
     &-box {
       h3 {
         color: #2d8080;
@@ -25,7 +25,7 @@
       width: 100%;
       align-items: center;
       text-align: center;
-      padding: 5vw;
+      padding: 4vw;
     }
   }
   &-image {

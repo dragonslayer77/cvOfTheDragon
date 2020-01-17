@@ -25,7 +25,7 @@ const About = () => {
         <div className="about-sections-box">
           <h3>Code</h3>
           <p>
-            I started coding in early 2019 at Wild Code School, since then I’ve
+            I started coding in early 2019 at <span>Wild Code School</span>, since then I’ve
             worked on various projects including blogs, games and simple landing
             pages. My focus at the moment is Javascript, mainly React, but I’m
             always learning new things.

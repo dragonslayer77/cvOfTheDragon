@@ -1,12 +1,12 @@
 .navbar{ 
-    position: absolute;
+    position: fixed;
     width: 100%;
     // overflow: hidden;
     // top: 0;
     // margin: 0;
     // background-color: transparent;
     // display: flex;
-    // z-index: 1000;
+    z-index: 1;
     background-color: transparent;
     // align-content: center;
     justify-content: space-between;
@@ -46,18 +46,18 @@
             transition: all 0.5s;
             
         }
-    //     &-active{
-    //     color: #ffffff;
-    //     text-align: center;
-    //     padding: 0px 2rem;
-    //     text-decoration: none;
-    //     font-size: 23px;
+        &-active{
+        color: #2d8080;
+        text-align: center;
+        padding: 0px 2rem;
+        text-decoration: none;
+        font-size: 23px;
 
-    //     a{
-    //         text-decoration: none;
-    //         color: inherit;
-    //     }
-    // }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
 }
 
 .burger-menu-image{

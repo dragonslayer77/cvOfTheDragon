@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const menuItems = ["About", "Development", "Contact"];
+const menuItems = ["Home", "About", "Development", "Contact"];
 
 class NavbarItems extends Component {
   constructor(props) {
